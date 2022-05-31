@@ -11,5 +11,18 @@ export class AcumuladorComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  title = ' Angular bases acumulador';
+
+  numero: number = 2;
+
+  duplicar(){
+    this.numero = this.numero*2;
+  }
+  triplicar(){
+    this.numero = this.numero*3;
+  }
+  reiniciar(){
+    this.numero = 2;
+  }
 
 }

@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = ' Angular bases';
-
-  numero: number = 2;
-
-  duplicar(){
-    this.numero = 2;
-  }
+  
 }
