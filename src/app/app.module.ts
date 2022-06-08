@@ -6,6 +6,7 @@ import { AcumuladorComponent } from './acumulador/acumulador.component';
 import { ClienteModule } from './cliente/cliente.module';
 import { EmpleadosModule } from './empleados/empleados.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { EmpleadosModule } from './empleados/empleados.module';
     ClienteModule,
     EmpleadosModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

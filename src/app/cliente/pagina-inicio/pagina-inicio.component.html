@@ -1,1 +1,24 @@
-<p>pagina-inicio works!</p>
+<h1>Lista de Clientes</h1>
+
+<div class="row">
+  <div class="col">
+      <app-listar-cliente [clientes]="clientes"></app-listar-cliente>
+  </div>
+  <div class="col">
+    <h3>Agregar</h3>
+    <hr>
+    <form (submit)="Agregar()">
+      <input type="text"
+      placeholder="Nombre"
+      name="nombre"
+      [(ngModel)]="nuevo.nombre">
+      <br>
+      <input type="number"
+      placeholder="Credito"
+      name="credito"
+      [(ngModel)]="nuevo.credito">
+      <button type="submit">Agregar</button>
+    </form>
+
+  </div>
+</div>

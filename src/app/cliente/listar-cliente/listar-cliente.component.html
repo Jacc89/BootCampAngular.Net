@@ -1,1 +1,8 @@
-<p>listar-cliente works!</p>
+ <h3>Clientes</h3>
+ <hr>
+ <ul>
+ <li *ngFor="let cliente of clientes">
+   {{ cliente.nombre }} --- {{ cliente.credito | number }}
+  </li>
+ </ul>
+

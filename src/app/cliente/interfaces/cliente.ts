@@ -1,2 +1,4 @@
-export interface Cliente {
+export interface ICliente {
+  nombre:string;
+  credito:number;
 }

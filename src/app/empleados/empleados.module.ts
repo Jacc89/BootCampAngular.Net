@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EmpleadoComponent } from './empleado/empleado.component';
 import { ListarEmpleadosComponent } from './listar-empleados/listar-empleados.component';
+import { EmpleadoComponent } from './empleado/empleado.component';
 import { AgregarEmpleadoComponent } from './agregar-empleado/agregar-empleado.component';
-
-
 
 @NgModule({
   declarations: [
@@ -14,6 +12,12 @@ import { AgregarEmpleadoComponent } from './agregar-empleado/agregar-empleado.co
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[
+    EmpleadoComponent,
+    ListarEmpleadosComponent,
+    AgregarEmpleadoComponent
+
+  ],
 })
 export class EmpleadosModule { }
